@@ -1,17 +1,19 @@
-import Alumno from "./models/alumno.js"
-import {sumar, restar, multiplicar, dividir} from "./modules/matematica.js"
-import {OMDBSearchByPage, OMDBSearchComplete, OMDBGetByImdbID} from
-"./modules/omdb-wrapper.js"
 
-import express  from "express"
-import res from "express/lib/response.js";
+import express from "express"; // hacer npm i express
+import cors from "cors"; // hacer npm i cors
 const app = express();
-const port = 3000
-
-app.get("/", (req, res) => {res.send("Hola")} ) 
-
-app.get("/", (req, res) => {res.send("Hola")} ) 
-
-app.get("/", (req, res) => {res.send("Hola")} ) 
+const port = 3000;
+// Agrego los Middlewares
+app.use(cors()); // Middleware de CORS
+app.use(express.json()); // Middleware para parsear y comprender JSON
+//
+// Aca pongo todos los EndPoints
+//
+app.get('/', (req, res) => { // EndPoint "/"
+res.send('Ya estoy respondiendo!');
+})
+app.get('/saludar', (req, res) => { // EndPoint "/saludar"
+res.send('Hello World!');
+})
 
 app.listen(port, () => {   console.log(`Listening on http://localhost:${port}`)})
