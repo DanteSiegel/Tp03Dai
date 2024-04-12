@@ -1,0 +1,23 @@
+{
+  "name": "tp03dai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanteSiegel/Tp03Dai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanteSiegel/Tp03Dai/issues"
+  },
+  "homepage": "https://github.com/DanteSiegel/Tp03Dai#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
